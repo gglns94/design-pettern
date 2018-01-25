@@ -1,11 +1,12 @@
-class PrintBanner extends Banner implements Print {
+class PrintBanner implements Print {
+    private Banner banner;
     public PrintBanner(String string) {
-        super(string);
+        banner = new Banner(string);
     }
     public void printWeak() {
-        showWithParen();
+        banner.showWithParen();
     }
     public void printStrong() {
-        showWithAster();
+        banner.showWithAster();
     }
 }
