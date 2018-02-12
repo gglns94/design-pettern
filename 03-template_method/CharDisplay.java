@@ -5,15 +5,15 @@ public class CharDisplay extends AbstractDisplay {
         this.c = c;
     }    
 
-    public void open() {
+    protected void open() {
         System.out.print("<<");
     }
 
-    public void print() {
+    protected void print() {
         System.out.print(c);
     }
 
-    public void close() {
+    protected void close() {
         System.out.println(">>");
     }
 }

@@ -6,15 +6,15 @@ public class StringDisplay extends AbstractDisplay {
         this.string = string;
     }
 
-    public void open() {
+    protected void open() {
         printLine();
     }
 
-    public void print() {
+    protected void print() {
         System.out.println("|" + string + "|");
     }
 
-    public void close() {
+    protected void close() {
         printLine();
     }
 
