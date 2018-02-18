@@ -15,4 +15,7 @@ public class BigCharFactory {
         }
         return bc;
     }
+    public void clear() {
+        pool.clear();    
+    }
 }
